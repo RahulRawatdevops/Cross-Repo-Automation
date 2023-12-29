@@ -27,5 +27,11 @@ jobs:
 
       - name: Execute Python Script
         run: |
-          python my.py        
+          python my.py    
+
+
+      - name: Run Cross-Repository Task
+        run: |
+          git clone https://github.com/RahulRawatdevops/node-todo-cicd.git
+          cd node-todo-cicd
      
